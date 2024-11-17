@@ -1,0 +1,19 @@
+---
+/*const header = Astro.props.header;
+const text = Astro.props.text; */
+
+const {header, text, test} = Astro.props;
+---
+
+
+
+<article>
+    <h2>
+        {header} 
+    </h2>
+    <p>{text}</p>
+    <slot />
+    <button>{test}</button>
+</article>
+
+<style></style>

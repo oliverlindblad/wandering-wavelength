@@ -1,5 +1,6 @@
 ---
-
+import Card from "../components/Card.astro";
+import Navigation from "../components/Navigation.astro";
 ---
 
 <html lang="en">
@@ -11,6 +12,22 @@
 		<title>Astro</title>
 	</head>
 	<body>
+		<Navigation />
 		<h1>Astro</h1>
+		<main>
+<Card header="Hej Verden">
+	<img src="/meme1.webp" alt="Et meme" /> 
+	<button>Klik her</button>
+</Card>
+
+<Card header="Hej Verden">
+	<button>Klik her</button>
+	<img src="/meme2.webp" alt="Et meme" /> 
+</Card>
+
+<Card test="noget" header="Hej Bert" text="lorem ipsum dollar" />
+<Card test="noget" header="Hej Andreas" text="lorem ipsum dollar" />
+	
+		</main>
 	</body>
 </html>
